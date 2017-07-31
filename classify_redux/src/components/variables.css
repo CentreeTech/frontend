@@ -1,0 +1,48 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Roboto+Condensed:300,400,700');
+
+:root {
+  /*
+   * Typography
+   * ======================================================================== */
+
+  --font-family-base: 'Roboto Condensed', 'Montserrat', sans-serif;
+
+  /*
+   * Layout
+   * ======================================================================== */
+
+  --color-height: 5px;
+  --nav-height: calc(50px + var(--color-height));
+  --entry-height: 22px;
+  --max-content-width: 1000px;
+
+  /*
+   * Media queries breakpoints
+   * ======================================================================== */
+
+  --screen-xs-min: 480px;  /* Extra small screen / phone */
+  --screen-sm-min: 768px;  /* Small screen / tablet */
+  --screen-md-min: 992px;  /* Medium screen / desktop */
+  --screen-lg-min: 1200px; /* Large screen / wide desktop */
+
+  /*
+   * Colors
+   * ======================================================================== */
+  --black: #222;
+  --white: #fff;
+  --yellow: #f2ca70;
+  --orange: #ed9e72;
+  --dgreen: #9fdd5e;
+  --lgreen: #caed72;
+  --blue: #4e7fc6;
+  
+  --exit-red: #e64;
+}

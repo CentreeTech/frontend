@@ -1,0 +1,97 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.css';
+
+:root {
+  --brand-color: #fff;
+}
+
+.root {
+  background: var(--black);
+  color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.container {
+  height: var(--nav-height);
+}
+
+.brand {
+  color: var(--brand-color);
+  text-decoration: none;
+  font-size: 36px;
+}
+
+.brandTxt {
+  margin-left: 10px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.adornment {
+  bottom: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: var(--color-height);
+}
+
+.yellow {
+  background: #f2ca70;
+  -webkit-flex: 5;
+  -moz-flex: 5;
+  -ms-flex: 5;
+  -o-flex: 5;
+  flex: 5;
+}
+
+.orange{
+  background: #ed9e72;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+}
+
+.dgreen{
+  background: #9fdd5e;
+  -webkit-flex: 14;
+  -moz-flex: 14;
+  -ms-flex: 14;
+  -o-flex: 14;
+  flex: 14;
+}
+
+.lgreen{
+  background: #caed72;
+  -webkit-flex: 5;
+  -moz-flex: 5;
+  -ms-flex: 5;
+  -o-flex: 5;
+  flex: 5;
+}
+
+.dblue{
+  background: #4e7fc6;
+  -webkit-flex: 10;
+  -moz-flex: 10;
+  -ms-flex: 10;
+  -o-flex: 10;
+  flex: 10;
+}

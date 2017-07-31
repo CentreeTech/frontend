@@ -1,0 +1,6 @@
+{
+  "name": "EditDataWindow",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./EditDataWindow.js"
+}

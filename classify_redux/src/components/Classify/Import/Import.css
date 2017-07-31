@@ -1,0 +1,121 @@
+@import '../../variables.css';
+
+:root {
+	--border-inset: 20px;
+}
+
+.root {
+	width: 100%;
+	height: 100%;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+  /* z-index: 1; */
+}
+
+.line {
+	fill:none;
+	stroke:#222;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-width:3px;
+  transition: stroke 0.25s ease;
+}
+
+.dropzone {
+	position: relative;
+  transition: color 0.25s ease, background 0.25s ease;
+  width: 100%;
+  height: 100%;
+	&.active {
+		background: var(--dgreen);
+		color: var(--white);
+		.line {
+			stroke: var(--white);
+		}
+		.border {
+			border-color: var(--white);
+		}
+		.arrow {
+			-webkit-animation: MoveUpDown 1.25s ease infinite;
+			-o-animation: MoveUpDown 1.25s ease infinite;
+			animation: MoveUpDown 1.25s ease infinite;
+		}
+	}
+	&.reject {
+		background: var(--exit-red);
+		color: var(--white);
+		.line {
+			stroke: var(--white);
+		}
+		.border {
+			border-color: var(--white);
+		}
+	}
+}
+
+@keyframes MoveUpDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.border {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - var(--border-inset));
+	height: calc(100% - var(--border-inset));
+	border: 2px dashed var(--black);
+	transition: border-color 0.25s ease;
+}
+
+.text {
+	pointer-events: none;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	width: 90%;
+	text-align: center;
+	.arrow {
+		position: relative;
+		width: 26px;
+		margin-bottom: 3px;
+	}
+	.upload {
+		font-size: 16px;
+		margin: 3px 0;
+		font-weight: 400;
+	}
+	.drag {
+		font-size: 15px;
+		font-weight: 700;
+		margin: 0;
+	}
+}
+
+input {
+	pointer-events: all;
+	opacity: 0.0;
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right:0;
+	width: 100%;
+	height:100%;
+	display: none;
+}

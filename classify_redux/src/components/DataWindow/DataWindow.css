@@ -1,0 +1,26 @@
+@import '../variables.css';
+
+.root {
+	/* border-left: 2px var(--black) solid; */
+	padding-left: 5px;
+	font-weight: 700;
+	/* height: 0; */
+	overflow: hidden;
+	&.alt {
+		h3 {
+			color: var(--white);
+			font-weight: 700;
+		}
+	}
+	&.open {
+		height: auto;
+	}
+}
+
+.container {
+	
+}
+
+.value {
+	font-weight: 400;
+}

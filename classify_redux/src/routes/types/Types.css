@@ -1,0 +1,61 @@
+@import '../../components/variables.css';
+
+.root {
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding-top: 10px;
+}
+
+.type_cont {
+  width: 400px;
+  margin-left: 20px;
+}
+
+.types {
+  margin-top: 5px;
+}
+
+.create_cont {
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0 0 10px 10px;
+}
+
+.submit {
+  margin: 28px 0 0 20px;
+  background: var(--black);
+  border: 5px solid var(--black);
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  &:hover {
+    background: var(--white);
+    color: var(--black);
+  }
+}
+
+.create_cont {
+  width: 400px;
+}

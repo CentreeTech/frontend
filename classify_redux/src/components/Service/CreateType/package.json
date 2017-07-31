@@ -1,0 +1,6 @@
+{
+  "name": "CreateType",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CreateType.js"
+}

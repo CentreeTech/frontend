@@ -1,0 +1,53 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.css';
+
+.root {
+	display: flex;
+	background: #ddd;
+	
+}
+
+.controls {
+	display: flex;
+	.button {
+		-webkit-backface-visibility: hidden;
+		margin: 10px 0 10px 10px;
+	}
+	.play {
+		border-top: 10px solid transparent;
+    border-left: 16px solid #000;
+    border-bottom: 10px solid transparent;
+    cursor: pointer;
+    &:hover {
+	    border-left-color: #2b5;
+    }
+	}
+	.pause {
+		display: none;
+		width: 5px;
+    height: 20px;
+    border-right: 6px solid #000;
+    border-left: 6px solid #000;
+    cursor: pointer;
+    &:hover {
+	    border-color: #48d;
+    }
+	}
+}
+
+.progress {
+	flex: 1
+}
+
+.bar {
+	width: 100%;
+	background: #000;
+}

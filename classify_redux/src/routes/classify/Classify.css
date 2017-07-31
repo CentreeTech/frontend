@@ -1,0 +1,206 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../../components/variables.css';
+
+.root {
+	height: calc(100vh - var(--nav-height) - 15px);
+  padding-top: 10px;
+  h3 {
+  	font-size: 17px;
+  }
+  h1 {
+  	margin: 0;
+		wrap: ellipsis;
+		white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+  }
+}
+
+.container {
+	height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+	-webkit-flex-flow: column;
+	-moz-flex-flow: column;
+	-ms-flex-flow: column;
+	-o-flex-flow: column;
+	flex-flow: column;
+}
+
+.upper {
+
+}
+
+.mid {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 15px;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+}
+
+.lower {
+	
+}
+
+.col {
+	/* -webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1; */
+	margin-left: 20px
+}
+
+.import {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	-moz-flex-flow: column;
+	-ms-flex-flow: column;
+	-o-flex-flow: column;
+	flex-flow: column;
+	width: 200px;
+	.import_cont {
+		height: 200px;
+	}
+}
+
+.queue {
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	-moz-flex-flow: column;
+	-ms-flex-flow: column;
+	-o-flex-flow: column;
+	flex-flow: column;
+}
+
+.examples {
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+	overflow-y: auto;
+}
+
+.example {
+	padding: 5px 7px;
+	cursor: pointer;
+	&.selected {
+		background: var(--dgreen);
+		color: color(var(--dgreen) lightness(-40%));
+	}
+	&:hover {
+		background: var(--black);
+		color: var(--white);
+	}
+	.example_name {
+		font-size: 16px;
+		margin: 0;
+		wrap: ellipsis;
+		white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  font-weight: 700;
+	}
+	.example_length {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 14px;
+	}
+}
+
+.submit {
+	background: var(--black);
+	color: var(--white);
+	padding: 20px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+	cursor: pointer;
+	&:hover {
+		color: color(var(--orange) lightness(-35%));
+		background: var(--orange);
+	}
+}
+
+.edit {
+	width: 50%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	-moz-flex-flow: column;
+	-ms-flex-flow: column;
+	-o-flex-flow: column;
+	flex-flow: column;
+}
+
+.entry_adder {
+	background: color(var(--black) a(20%));
+	padding: 5px 7px;
+}
+
+.entries {
+	padding: 5px 7px;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+	overflow-y: auto;
+}
+
+.data {
+	/* margin-right: 20px */
+}
+
+.entries_cont {
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	-moz-flex-flow: column;
+	-ms-flex-flow: column;
+	-o-flex-flow: column;
+	flex-flow: column;
+}

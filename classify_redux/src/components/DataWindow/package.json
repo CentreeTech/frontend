@@ -1,0 +1,6 @@
+{
+  "name": "DataWindow",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./DataWindow.js"
+}

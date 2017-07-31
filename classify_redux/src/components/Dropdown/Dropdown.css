@@ -1,0 +1,81 @@
+@import '../variables.css';
+
+.root {
+	line-height: 21px;
+	max-width: 100%;
+	&.alt {
+		.arrow:after {
+			border-color: var(--white) transparent transparent transparent
+		}
+		.options {
+			background: var(--white);
+			color: var(--black);
+		}
+	}
+}
+
+.container {
+	cursor: pointer;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	max-width: 100%;
+}
+
+.arrow {
+	position: relative;
+	width: 10px;
+	&:after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: calc(50% - 1px);
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-style: solid;
+		border-width: 4px 4px 0 4px;
+		border-color: #555 transparent transparent transparent;
+	}
+}
+
+.options {
+	max-width: 100%;
+	overflow: hidden;
+	position: absolute;
+	background: #ddd;
+	height: 0;
+	transition: height 0.3s cubic-bezier(.46,.04,.07,.93);
+	z-index: 50;
+}
+
+.option {
+	padding: 1px 15px 0 5px;
+	&:hover {
+		background: color(#ddd lightness(-10%))
+	}
+}
+
+.select {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.selected { 
+	max-width: calc(100% - 15px);
+	margin: 0 5px;
+	padding-top: 1px;
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

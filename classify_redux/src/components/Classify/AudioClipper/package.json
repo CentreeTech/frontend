@@ -1,0 +1,6 @@
+{
+  "name": "AudioClipper",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AudioClipper.js"
+}
