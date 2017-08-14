@@ -36,8 +36,8 @@ const config = {
   context: path.resolve(__dirname, '..'),
 
   output: {
-    path: path.resolve(__dirname, '../build/public/assets'),
-    publicPath: '/assets/',
+    path: path.resolve(__dirname, '../build/public/assets/'),
+    publicPath: 'assets/',
     pathinfo: isVerbose,
     filename: isDebug ? '[name].js' : '[name].[chunkhash:8].js',
     chunkFilename: isDebug

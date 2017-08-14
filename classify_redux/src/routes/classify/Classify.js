@@ -185,7 +185,7 @@ class Classify extends React.Component {
   uploadExample(credentials, file, filename) {
     return new Promise((resolve, reject) => {
       // console.log(credentials, file, filename);
-      var params = {Bucket: credentials.BUCKET_NAME, Key: filename, Body: file};//new File([file], filename)
+      var params = {Bucket: credentials.BUCKET_NAME, Key: "classifications/" + filename, Body: file};//new File([file], filename)
       this.s3.upload(params, (err, data) => {
         // console.log(err, data)
         resolve()
