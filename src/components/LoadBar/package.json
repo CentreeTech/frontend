@@ -1,6 +1,0 @@
-{
-  "name": "LoadBar",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./LoadBar.js"
-}

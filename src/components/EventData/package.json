@@ -1,6 +1,0 @@
-{
-  "name": "EventData",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./EventData.js"
-}
